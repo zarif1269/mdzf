@@ -1,0 +1,289 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first-section{
+    width: 100%;
+    padding-bottom: 100px;
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.first-header{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.fungi_logo{
+    width: 150px;
+    height:45px ;
+    margin-top: 20px;
+
+}
+.first-ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-top: 20px;
+}
+.first-li{
+    margin: 0 8px;
+}
+.first-li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.diff-color{
+    color: tomato;
+}
+.first-li a:hover{
+    color: tomato;
+    transition: all 0.5s ease;
+}
+.second-work{
+    display: flex;
+    width: 80%;
+    margin: 0   auto;
+    justify-content: space-between;
+}
+.hello{
+    font-weight: 600;
+    font-size: 26px;
+    color: #fff;
+    margin-top: 20px;
+}
+.name{
+    font-size: 60px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.3;
+    margin-top: 20px;
+}
+.from-bd{
+    color: #fff;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.contact-btn{
+    display: inline-block;
+    background-color: tomato;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.1s ease-in;
+}
+.contact-btn:hover{
+    background-color: rgb(206, 50, 22);
+    transition: all 0.1s ease-in;
+}
+.zarif-img{
+    display: block;
+    width: 280px;
+    height: 370px;
+    margin-top: 40px;
+}
+.second-section{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.welcome-text{
+    text-align: center;
+}
+.ano-para{
+    text-align: center;
+    margin-top: 15px;
+    color: #615978 ;
+    font-size: 20px;
+}
+.three-border{
+    display: grid;
+    width: 80%;
+    margin: 55px auto;
+    grid-template-columns: repeat(3,1fr);
+}
+.symble:hover:after{
+transform: rotate(-10deg);
+
+}
+.symble:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(250, 100, 73);
+    transition: 0.3s;
+    z-index: -1;
+    border-radius: 12px;
+}
+.symble{
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid darkorange;
+    padding: 25px;
+    position: relative;
+    background-color: #fff;
+}
+.symble-img{
+    width: 50px;
+    height: 50px;
+}
+.extra-para{
+    font-size: 17px;
+    color: #615978;
+    line-height: 1.4;
+    padding-top: 8px;
+}
+.about-me-div{
+    width: 100%;
+    padding-bottom: 100px;
+    background-color:#efecf5;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+    margin-bottom: 20px;
+}
+.zf-imgs{
+    width: 45%;
+}
+.zf-info{
+    margin-top: 75px;
+    margin-left:80px ;
+}
+.zf-img-2{
+    width: 230px;
+    height: 310px;
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    left: 230px;
+}
+.zf-img-3{
+    width: 245px;
+    height: 320px;
+    position: absolute;
+    z-index: 3;
+    top: 290px;
+    left: 50px;
+}
+.bd-h2{
+    font-size: 48px;
+}
+.lorem-1{
+    margin-top: 30px;
+    font-size: 18px;
+    color: #615978;
+    line-height: 1.3;
+}
+.email-name-etc{
+    display: grid;
+    width: 40%;
+    grid-template-columns: repeat(2,3fr);
+    margin-top: 35px;
+}
+.same-class-2{
+    margin-left: 160px;
+}
+.same-class-1{
+    margin-bottom: 20px;
+}
+.information{
+    color: #615978;
+}
+.btn-cv{
+    border: 1px solid tomato;
+    width: 175px;
+    height: 60px;
+    background-color: tomato;
+    padding: 17px 4px;
+    border-radius: 10px;
+    transition: all 0.1s ease-in;
+   
+}
+.btn-cv:hover{
+    background-color: rgb(206, 50, 22);
+    transition: all 0.1s ease-in;
+}
+.btn-cv a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 17px 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 689px){
+    .first-ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .second-work{
+        flex-direction: column;
+    }
+    .about-text{
+        text-align: center;
+    }
+    .zarif-img{
+        margin: 25px auto 0 auto;
+    }
+    .three-border{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .symble{
+        text-align: center;
+    }
+    .about-me-div{
+        flex-direction: column;
+        
+    }
+    .zf-imgs{
+        height: 500px;
+        width: 100%;
+    
+    }
+    .zf-info{
+        margin-top: 100px;
+    }
+    .zf-img-3{
+        top: 250px;
+    }
+    .about-me-div{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .email-name-etc{
+        grid-template-columns: repeat(1,6fr);
+    }
+    .same-class-2{
+        margin-bottom: 20px;
+        margin-left:2px;
+    }
+    .btn-cv{
+        margin-left: 2px;
+    }
+}
